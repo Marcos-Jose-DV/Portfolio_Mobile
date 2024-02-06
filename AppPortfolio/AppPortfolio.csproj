@@ -57,6 +57,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\NunitoSans-10pt-Bold.ttf" />
+	  <None Remove="Resources\Images\about_icon.png" />
+	  <None Remove="Resources\Images\course_icon.png" />
+	  <None Remove="Resources\Images\github.png" />
+	  <None Remove="Resources\Images\home_icon.png" />
+	  <None Remove="Resources\Images\internet.png" />
+	  <None Remove="Resources\Images\linkedin.png" />
+	  <None Remove="Resources\Images\p02.jpg" />
+	  <None Remove="Resources\Images\project_icon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />

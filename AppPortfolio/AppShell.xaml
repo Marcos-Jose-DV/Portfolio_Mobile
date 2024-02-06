@@ -6,14 +6,24 @@
     xmlns:local="clr-namespace:AppPortfolio"
     xmlns:views="clr-namespace:AppPortfolio.Views"
     Shell.FlyoutBehavior="Disabled"
+    Shell.TabBarBackgroundColor="Black"
+    Shell.TabBarUnselectedColor="White"
+    Shell.TabBarForegroundColor="{StaticResource Primary}"
+    Shell.TabBarTitleColor="{StaticResource Primary}"
     Title="AppPortfolio">
 
     <TabBar>
-        <ShellContent Title="Cats"
-                     Icon="cat.png"
+        <ShellContent Title="Home"
+                     Icon="home_icon.png"
                      ContentTemplate="{DataTemplate views:HomePage}" />
-        <ShellContent Title="Dogs"
-                     Icon="dog.png"
+        <ShellContent Title="Sobre"
+                     Icon="about_icon.png"
                      ContentTemplate="{DataTemplate views:HomePage}" />
+        <ShellContent Title="Projetos"
+                     Icon="project_icon.png"
+                     ContentTemplate="{DataTemplate views:HomePage}" />
+        <ShellContent Title="Cursos"
+              Icon="course_icon.png"
+              ContentTemplate="{DataTemplate views:HomePage}" />
     </TabBar>
 </Shell>
