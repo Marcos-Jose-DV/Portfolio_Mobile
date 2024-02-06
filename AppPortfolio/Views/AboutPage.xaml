@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPortfolio.Views.AboutPage"
+             Shell.NavBarIsVisible="False"
+             Title="AboutPage">
+    <ContentPage.Resources>
+        <Style TargetType="Label" x:Key="H1">
+            <Setter Property="FontSize" Value="34"/>
+            <Setter Property="FontFamily" Value="NunitoSans-Bold"/>
+            <Setter Property="HorizontalOptions" Value="Center"/>
+        </Style>
+        <Style TargetType="Label" x:Key="H2">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="FontFamily" Value="NunitoSans-Bold"/>
+        </Style>
+    </ContentPage.Resources>
+    <ScrollView>
+        <StackLayout HorizontalOptions="Center" Margin="20" Spacing="20">
+            <Grid>
+                <Label Text="Sobre" Style="{StaticResource H1}"/>
+                <BoxView Margin="0,40,0,0" HeightRequest="3" WidthRequest="70" Color="{StaticResource Primary}"/>
+            </Grid>
+            <Border WidthRequest="250" StrokeShape="RoundRectangle 20">
+                <Border.Shadow>
+                    <Shadow Offset="1,1"
+                  Brush="Gray"
+                  Opacity=".2"
+                  Radius="20"/>
+                </Border.Shadow>
+                <Image Source="p01.jpg" Aspect="AspectFill"/>
+            </Border>
+            <Label Style="{StaticResource H2}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Style="{StaticResource H2}" Text="Minha jornada na programação começou em agosto de 2022, quando iniciei meu curso na faculdade de Análise e Desenvolvimento de Sistemas. Comecei com Python, mas enfrentei dificuldades e desisti. Após dois meses, decidi retomar e recomecei da maneira certa, focando em lógica de programação. Fiz o curso"/>
+
+                        <Span Style="{StaticResource H2}" Text=" Algoritmos e Lógica de Programação " TextColor="{StaticResource Primary}" TextDecorations="Underline" />
+
+                        <Span Style="{StaticResource H2}" Text="por Nelio Alves na Udemy, o que esclareceu muitos conceitos básicos. No final de 2022, em novembro, consegui um estágio em desenvolvimento em C#. Ao longo de 2023, concentrei-me no universo .NET, aprendendo os fundamentos de maneira sólida. Atualmente, estou focado principalmente no Back-End, mas também tenho interesse no Front-End e Mobile, sendo o .NET MAUI meu framework favorito para desenvolvimento mobile. &#10; &#10;"/>
+
+                        <Span Style="{StaticResource H2}" Text="No meu estágio, inicialmente, dediquei dois meses ao estudo de C# e SQL Server. Posteriormente, comecei a oferecer suporte nas Web APIs, resolvendo pequenos bugs quando solicitado. Durante esse período, desenvolvi dois projetos, um utilizando Razor Pages e outro com .NET MAUI. Na época, ainda não estava familiarizado com .NET MAUI e aprendi conforme avançava nessas tarefas"/>
+
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
