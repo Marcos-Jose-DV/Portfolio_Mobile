@@ -11,9 +11,15 @@
             <Setter Property="FontSize" Value="34"/>
             <Setter Property="FontFamily" Value="NunitoSans-Bold"/>
         </Style>
+        <Style TargetType="Frame" x:Key="Icon">
+            <Setter Property="BackgroundColor" Value="{AppThemeBinding Dark=White,Light=Transparent}"/>
+            <Setter Property="HasShadow" Value="True"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderColor" Value="Transparent"/>
+        </Style>
     </ContentPage.Resources>
     <ScrollView>
-        <Grid RowDefinitions="Auto,Auto,Auto,Auto" HorizontalOptions="Center" RowSpacing="40" Margin="0,30">
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto, Auto" HorizontalOptions="Center" RowSpacing="20" Margin="0,30">
 
             <Label Margin="20,0" Grid.Row="0" Style="{StaticResource H1}">
                 <Label.FormattedText>
@@ -26,27 +32,29 @@
                 </Label.FormattedText>
             </Label>
 
-            <HorizontalStackLayout Grid.Row="1" Margin="20,0" Spacing="20">
-                <Button Grid.Row="1" 
-                WidthRequest="100" 
-                HorizontalOptions="Start" 
-                Text="Contado"
-                FontFamily="NunitoSans-Bold"
-                TextColor="{StaticResource White}" 
-                BackgroundColor="{StaticResource Primary}"/>
+            <Button Grid.Row="1"
+                    Margin="20,0"
+                    WidthRequest="100" 
+                    HorizontalOptions="Start" 
+                    Text="Contato"
+                    FontFamily="NunitoSans-Bold"
+                    TextColor="{StaticResource White}" 
+                    BackgroundColor="{StaticResource Primary}"/>
 
-                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
-                    <Image Source="linkedin.png"  />
+
+            <HorizontalStackLayout Grid.Row="2" Margin="20,0" Spacing="20">
+                <Frame Style="{StaticResource Icon}">
+                    <Image Source="linkedin.png" WidthRequest="20" />
                 </Frame>
-                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
-                    <Image Source="github.png" />
+                <Frame Style="{StaticResource Icon}">
+                    <Image Source="github.png"  WidthRequest="20"/>
                 </Frame>
-                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
-                    <Image Source="internet.png" />
+                <Frame Style="{StaticResource Icon}">
+                    <Image Source="internet.png"  WidthRequest="20"/>
                 </Frame>
             </HorizontalStackLayout>
 
-            <Border Grid.Row="2" WidthRequest="250" StrokeShape="RoundRectangle 20" Stroke="Transparent">
+            <!--<Border Grid.Row="2" WidthRequest="250" StrokeShape="RoundRectangle 20" Stroke="Transparent">
                 <Border.Shadow>
                     <Shadow Offset="1,1"
                             Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
@@ -54,12 +62,12 @@
                             Radius="5"/>
                 </Border.Shadow>
                 <Image Source="p02.jpg" Aspect="AspectFill"/>
-            </Border>
+            </Border>-->
 
 
             <VerticalStackLayout Grid.Row="3">
                 <Label Margin="10,20,0,0" Text="Projetos"  FontSize="18" FontFamily="NunitoSans-Bold"/>
-                <CollectionView ItemsSource="{Binding Categories}">
+                <CollectionView ItemsSource="{Binding CategoryProjects}">
                     <CollectionView.ItemsLayout>
                         <GridItemsLayout Orientation="Horizontal"/>
                     </CollectionView.ItemsLayout>
@@ -75,6 +83,34 @@
                                                 Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
                                                 Opacity=".6"
                                                 Radius="5"/>
+                                    </Border.Shadow>
+                                    <Image Source="{Binding ImageUrl}" Opacity="0.9" Aspect="AspectFill"/>
+                                </Border>
+                                <Label Text="{Binding Name}" TextColor="White" Margin="20" FontFamily="NunitoSans-Bold"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout Grid.Row="4">
+                <Label Margin="10,20,0,0" Text="Cursos"  FontSize="18" FontFamily="NunitoSans-Bold"/>
+                <CollectionView ItemsSource="{Binding CategoryCourses}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Border Margin="10" WidthRequest="150" HeightRequest="150" StrokeShape="RoundRectangle 20" Stroke="Transparent">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.GetProjectByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
+                                    </Border.GestureRecognizers>
+                                    <Border.Shadow>
+                                        <Shadow Offset="1,1"
+                                      Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
+                                      Opacity=".6"
+                                      Radius="5"/>
                                     </Border.Shadow>
                                     <Image Source="{Binding ImageUrl}" Opacity="0.9" Aspect="AspectFill"/>
                                 </Border>

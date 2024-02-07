@@ -75,5 +75,25 @@ public class AppDbContext : DbContext
             new CategoryProject(5, "Devops", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/category%2Fcateimg05.png?alt=media&token=9771f6c1-8971-4e91-9443-d96b0b179e0f"),
             new CategoryProject(6, "Logíca", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/category%2Fcateimg06.png?alt=media&token=ff0a6b09-9fb7-4839-a299-b451a37998cc")
             );
+
+        builder.Entity<Course>().HasData(
+            new Course(1, "C#", "Fundamentos do C#", "12 Hora(S)", "", 1, "C#"),
+            new Course(2, "Razor Pages", "Uma visão geral sobre o ASP.NET Razor Pages", "1 Hora(S)", "", 1, "C#"),
+            new Course(3, "Algoritimo", "Algoritmo e Lógiva de programação 2022 - O curso Completo", "30.5 Hora(S)", "", 6, "Algoritmo"),
+            new Course(4, "Maui", ".NET MAUI - Desenvolvendo um app de Controle Financeiro", "11 Hora(S)", "", 3, ".NET Maui"),
+            new Course(5, "Maui", ".NET MAUI - Desde las bases hasta Profesional | Android | IOS", "117.5 Hora(S)", "", 3, ".NET Maui"),
+            new Course(6, "JavaScript", "Fundamentos do JavaScript", "30 Hora(S)", "", 5, "JavaScript")
+            );
+
+        builder.Entity<CategoryCourse>().HasData(
+            new CategoryCourse(1, "C#", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg01.png?alt=media&token=4c0949d5-c94e-4cd2-b83a-b64569c54a06"),
+            new CategoryCourse(2, "Python", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg02.png?alt=media&token=8f810596-907c-4082-8e57-9d01eb5e160d"),
+            new CategoryCourse(3, ".NET Maui", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg03.png?alt=media&token=e701d78c-3189-49fb-aeab-09dfd6f3ae38"),
+            new CategoryCourse(4, "SQL", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg04.png?alt=media&token=922f9701-724e-4f46-8394-95ea31c90487"),
+            new CategoryCourse(5, "JavaScript", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg05.png?alt=media&token=d973f42d-feeb-478d-815e-7c5301864a6d"),
+            new CategoryCourse(6, "Algoritmo", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg06.png?alt=media&token=85721f30-2ba4-4120-9c9a-56a0c814830f"),
+            new CategoryCourse(7, "HTML", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg07.png?alt=media&token=3365b807-833a-486f-bceb-aa024f523ffe"),
+            new CategoryCourse(8, "CSS", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/CategoryCourse%2Fcourseimg08.png?alt=media&token=79663963-9fd3-4015-ad08-5d637db9d865")
+            );
     }
 }

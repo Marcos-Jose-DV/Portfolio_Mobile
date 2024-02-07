@@ -30,7 +30,12 @@ namespace AppPortfolio
             builder.Services.AddSingleton<ProjectDetailsPage>();
             builder.Services.AddSingleton<ProjectDetailsViewModel>();
 
+            builder.Services.AddSingleton<CoursePage>();
+            builder.Services.AddSingleton<CourseViewModel>();
+
             builder.Services.AddSingleton<IProjectRepository, ProjectRepository>();
+            builder.Services.AddSingleton<ICourseRepository, CourseRepository>();
+
             builder.Services.AddDbContext<AppDbContext>();
 
             var dbContext = new AppDbContext();

@@ -24,7 +24,7 @@
                      ContentTemplate="{DataTemplate views:ProjectPage}" />
         <ShellContent Title="Cursos"
                       Icon="course_icon.png"
-                      ContentTemplate="{DataTemplate views:HomePage}" />
+                      ContentTemplate="{DataTemplate views:CoursePage}" />
         <ShellContent Title="Jogos"
                       Icon="course_icon.png"
                       ContentTemplate="{DataTemplate views:HomePage}" />

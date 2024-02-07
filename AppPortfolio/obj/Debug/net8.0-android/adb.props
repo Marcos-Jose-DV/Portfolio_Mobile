@@ -1,2 +1,2 @@
-AdbTarget=-s RX8N80GSVSL
+AdbTarget=-s emulator-5554
 AdbOptions=
