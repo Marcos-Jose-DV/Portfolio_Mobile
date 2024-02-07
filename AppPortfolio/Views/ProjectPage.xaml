@@ -23,26 +23,40 @@
                 <BoxView Margin="0,50,0,0" HeightRequest="3" WidthRequest="70" Color="{StaticResource Primary}"/>
             </Grid>
 
-            <CollectionView ItemsSource="{Binding Projects}" >
+            <CollectionView ItemsSource="{Binding Projects}">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" Span="2"/>
+                </CollectionView.ItemsLayout>
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <StackLayout Orientation="Horizontal" Spacing="2">
-                            <Border WidthRequest="250" StrokeShape="RoundRectangle 20">
+                        <Grid>
+                            <Border Margin="10" WidthRequest="150" HeightRequest="150" StrokeShape="RoundRectangle 20" Stroke="Transparent">
                                 <Border.GestureRecognizers>
                                     <TapGestureRecognizer Command="{Binding BindingContext.GetProjectByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
                                 </Border.GestureRecognizers>
                                 <Border.Shadow>
                                     <Shadow Offset="1,1"
-                                      Brush="Gray"
-                                      Opacity=".2"
-                                      Radius="20"/>
+                                            Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
+                                            Opacity=".6"
+                                            Radius="5"/>    
                                 </Border.Shadow>
-                                <Label Text="{Binding Name}"/>
+                                <Image Source="{Binding ImageUrl}" Opacity="0.9" Aspect="AspectFill"/>
                             </Border>
-                        </StackLayout>
+                            <Label Text="{Binding Name}" TextColor="White" Margin="30,20,0,0" FontFamily="NunitoSans-Bold"/>
+                        </Grid>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <Border Padding="0" StrokeShape="RoundRectangle 20" Stroke="Transparent">
+                <Border.Shadow>
+                <Shadow Offset="1,1"
+                        Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
+                        Opacity=".6"
+                        Radius="5"/>
+                </Border.Shadow>
+                <Image Source="{Binding RecentProject}" Aspect="AspectFill"/>
+            </Border>
         </StackLayout>
     </ScrollView>
 </ContentPage>

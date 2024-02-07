@@ -4,6 +4,7 @@
              x:Class="AppPortfolio.Views.HomePage"
              Shell.NavBarHasShadow="True"
              Shell.NavBarIsVisible="False"
+             x:Name="PaiPage"
              Title="HomePage">
     <ContentPage.Resources>
         <Style TargetType="Label" x:Key="H1">
@@ -11,21 +12,22 @@
             <Setter Property="FontFamily" Value="NunitoSans-Bold"/>
         </Style>
     </ContentPage.Resources>
-    <Grid RowDefinitions="Auto,Auto,Auto" HorizontalOptions="Center" RowSpacing="40" Margin="20,50">
+    <ScrollView>
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto" HorizontalOptions="Center" RowSpacing="40" Margin="0,30">
 
-        <Label Grid.Row="0" Style="{StaticResource H1}">
-            <Label.FormattedText>
-                <FormattedString>
-                    <Span Text="Olá, &#10;" Style="{StaticResource H1}"/>
-                    <Span Text="Eu sou " Style="{StaticResource H1}"/>
-                    <Span Text="Marcos José  &#10;" TextColor="{StaticResource Primary}"/>
-                    <Span Text="Desenvolvedor .Net" Style="{StaticResource H1}"/>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+            <Label Margin="20,0" Grid.Row="0" Style="{StaticResource H1}">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Olá, &#10;" Style="{StaticResource H1}"/>
+                        <Span Text="Eu sou " Style="{StaticResource H1}"/>
+                        <Span Text="Marcos José  &#10;" TextColor="{StaticResource Primary}"/>
+                        <Span Text="Desenvolvedor .Net" Style="{StaticResource H1}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
 
-        <HorizontalStackLayout Grid.Row="1" Spacing="40">
-            <Button Grid.Row="1" 
+            <HorizontalStackLayout Grid.Row="1" Margin="20,0" Spacing="20">
+                <Button Grid.Row="1" 
                 WidthRequest="100" 
                 HorizontalOptions="Start" 
                 Text="Contado"
@@ -33,20 +35,55 @@
                 TextColor="{StaticResource White}" 
                 BackgroundColor="{StaticResource Primary}"/>
 
-            <Image Source="linkedin.png" />
-            <Image Source="github.png" />
-            <Image Source="internet.png" />
-        </HorizontalStackLayout>
+                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
+                    <Image Source="linkedin.png"  />
+                </Frame>
+                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
+                    <Image Source="github.png" />
+                </Frame>
+                <Frame BackgroundColor="{AppThemeBinding Dark=White,Light=Transparent}" HasShadow="True" Padding="10" BorderColor="Transparent">
+                    <Image Source="internet.png" />
+                </Frame>
+            </HorizontalStackLayout>
 
-        <Border Grid.Row="2" WidthRequest="250" StrokeShape="RoundRectangle 20">
-            <Border.Shadow>
-                <Shadow Offset="1,1"
-                         Brush="Gray"
-                         Opacity=".2"
-                         Radius="20"/>
-            </Border.Shadow>
-            <Image Source="p02.jpg" Aspect="AspectFill"/>
-        </Border>
+            <Border Grid.Row="2" WidthRequest="250" StrokeShape="RoundRectangle 20" Stroke="Transparent">
+                <Border.Shadow>
+                    <Shadow Offset="1,1"
+                            Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
+                            Opacity=".6"
+                            Radius="5"/>
+                </Border.Shadow>
+                <Image Source="p02.jpg" Aspect="AspectFill"/>
+            </Border>
 
-    </Grid>
+
+            <VerticalStackLayout Grid.Row="3">
+                <Label Margin="10,20,0,0" Text="Projetos"  FontSize="18" FontFamily="NunitoSans-Bold"/>
+                <CollectionView ItemsSource="{Binding Categories}">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Horizontal"/>
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Border Margin="10" WidthRequest="150" HeightRequest="150" StrokeShape="RoundRectangle 20" Stroke="Transparent">
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.GetProjectByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
+                                    </Border.GestureRecognizers>
+                                    <Border.Shadow>
+                                        <Shadow Offset="1,1"
+                                                Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
+                                                Opacity=".6"
+                                                Radius="5"/>
+                                    </Border.Shadow>
+                                    <Image Source="{Binding ImageUrl}" Opacity="0.9" Aspect="AspectFill"/>
+                                </Border>
+                                <Label Text="{Binding Name}" TextColor="White" Margin="20" FontFamily="NunitoSans-Bold"/>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
 </ContentPage>

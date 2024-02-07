@@ -11,9 +11,9 @@
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                 <Border Margin="0,20" StrokeShape="RoundRectangle 10">
-                    <VerticalStackLayout Spacing="20">
+                    <VerticalStackLayout Spacing="20" BackgroundColor="White">
                         
-                        <CarouselView ItemsSource="{Binding ImageUrls}" IndicatorView="IndicatorView" >
+                        <CarouselView ItemsSource="{Binding ImageUrls}" IndicatorView="IndicatorView" BackgroundColor="White">
                             <CarouselView.ItemTemplate>
                                 <DataTemplate>
                                     <Grid >
