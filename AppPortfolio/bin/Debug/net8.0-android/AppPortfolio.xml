@@ -4,5 +4,44 @@
         <name>AppPortfolio</name>
     </assembly>
     <members>
+        <member name="T:AppPortfolio.ViewModels.ProjectDetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.ProjectDetailsViewModel.Projects">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectDetailsViewModel._projects"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.ProjectDetailsViewModel.Banners">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectDetailsViewModel._banners"/>
+        </member>
+        <member name="T:AppPortfolio.ViewModels.ProjectViewModels">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.ProjectViewModels.Projects">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectViewModels._projects"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Banners">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Banners" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Banners">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Banners" generated properties.</summary>
+        </member>
     </members>
 </doc>

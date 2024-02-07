@@ -1,4 +1,6 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using AppPortfolio.ViewModels;
+using AppPortfolio.Views;
+using Microsoft.Extensions.Logging;
 
 namespace AppPortfolio
 {
@@ -15,6 +17,14 @@ namespace AppPortfolio
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("NunitoSans-10pt-Bold.ttf", "NunitoSans-Bold");
                 });
+
+            builder.Services.AddSingleton<ProjectPage>();
+            builder.Services.AddSingleton<ProjectViewModels>();
+
+            builder.Services.AddSingleton<ProjectDetailsPage>();
+            builder.Services.AddSingleton<ProjectDetailsViewModel>();
+
+            Routing.RegisterRoute(nameof(ProjectDetailsPage), typeof(ProjectDetailsPage));
 
 #if DEBUG
     		builder.Logging.AddDebug();

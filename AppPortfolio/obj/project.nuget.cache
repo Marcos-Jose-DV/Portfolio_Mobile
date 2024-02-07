@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "/4CHnQWjXuyzkU2/1ib4SFxBEZYJ08Ate88FEA9llH7f6yfdWy5Cl2JgxeyIwaPDj0jeSXayh0ws8GFjqX4Qmg==",
+  "dgSpecHash": "6hqUYEgaP/U3PvBabmP3EqW5dZPf4CIRU/YRCEzad6XXfuJgKipsszEXliL/TfY98GuTRcKI3kzBBM3V9uq3uw==",
   "success": true,
   "projectFilePath": "D:\\Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\marco\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

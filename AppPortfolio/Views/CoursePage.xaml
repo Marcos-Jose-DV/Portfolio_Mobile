@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppPortfolio.Views.CoursePage"
+             Title="CoursePage">
+    <!--<Grid RowDefinitions="Auto,Auto, Auto">
+        <CarouselView ItemsSource="{Binding Projects}"  
+                 IndicatorView="indicatorView" 
+                 CurrentItemChangedCommand="{Binding ItemChangedCommand}"
+                 CurrentItemChangedCommandParameter="{Binding Source={RelativeSource Self}, Path=CurrentItem}"
+                 PeekAreaInsets="200"
+                 Margin="0,0">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="CurrentItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Scale"
+                              Value="1.1" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="PreviousItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity"
+                              Value="0.5" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="NextItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity"
+                              Value="0.5" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState x:Name="DefaultItem">
+                                    <VisualState.Setters>
+                                        <Setter Property="Opacity"
+                              Value="0.25" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+                        <Frame HasShadow="True"
+                          BorderColor="DarkGray"
+                          CornerRadius="5"
+                          Margin="25"
+                          HeightRequest="300"
+                          HorizontalOptions="Center"
+                          VerticalOptions="StartAndExpand">
+                            <StackLayout>
+                                <Label Text="{Binding Name}"
+                                  FontAttributes="Bold"
+                                  FontSize="18"
+                                  HorizontalOptions="Center"
+                                  VerticalOptions="Center" />
+                                <Image Source="{Binding ImageUrls[0].ImageUrl}"
+                                      Aspect="AspectFill"
+                                      HeightRequest="150"
+                                      WidthRequest="150"
+                                      HorizontalOptions="Center" />
+                                <Label Text="{Binding Location}"
+                          HorizontalOptions="Center" />
+                                <Label Text="{Binding Details}"
+                                  FontAttributes="Italic"
+                                  HorizontalOptions="Center"
+                                  MaxLines="5"
+                                  LineBreakMode="TailTruncation" />
+                            </StackLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <IndicatorView x:Name="indicatorView"
+                Grid.Row="1"
+                Margin="0,0,0,40"
+                IndicatorColor="Transparent"
+                SelectedIndicatorColor="{StaticResource Primary}"
+                HorizontalOptions="Center">
+            <IndicatorView.IndicatorTemplate>
+                <DataTemplate>
+                    <Label Text="&#xf30c;"
+                    FontFamily="ionicons"
+                    FontSize="12" />
+                </DataTemplate>
+            </IndicatorView.IndicatorTemplate>
+        </IndicatorView>
+
+        <Grid Grid.Row="2">
+            <Label Text="{Binding Project.Name}"/>
+        </Grid>
+    </Grid>-->
+</ContentPage>
