@@ -31,7 +31,13 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-
+            
+            <Button Text="{Binding ThemeTitle}" 
+                    BackgroundColor="Transparent" 
+                    Margin="0,0,50,0" VerticalOptions="Start" 
+                    HorizontalOptions="End" 
+                    Command="{Binding CurrentThemeCommand}"/>
+            
             <Button Grid.Row="1"
                     Margin="20,0"
                     WidthRequest="100" 
@@ -39,31 +45,28 @@
                     Text="Contato"
                     FontFamily="NunitoSans-Bold"
                     TextColor="{StaticResource White}" 
-                    BackgroundColor="{StaticResource Primary}"/>
+                    BackgroundColor="{StaticResource Primary}"
+                    Command="{Binding ContactCommand}"
+                    CommandParameter="https://api.whatsapp.com/send?phone=5521981760896"/>
 
 
             <HorizontalStackLayout Grid.Row="2" Margin="20,0" Spacing="20">
-                <Frame Style="{StaticResource Icon}">
-                    <Image Source="linkedin.png" WidthRequest="20" />
+                <Frame Style="{StaticResource Icon}" >
+                    <ImageButton Source="linkedin.png" WidthRequest="20" 
+                                Command="{Binding ContactCommand}"
+                                CommandParameter="https://www.linkedin.com/in/marcosjosedv/"/>
                 </Frame>
                 <Frame Style="{StaticResource Icon}">
-                    <Image Source="github.png"  WidthRequest="20"/>
+                    <ImageButton Source="github.png"  WidthRequest="20"
+                                Command="{Binding ContactCommand}"
+                                CommandParameter="https://github.com/Marcos-Jose-DV"/>
                 </Frame>
                 <Frame Style="{StaticResource Icon}">
-                    <Image Source="internet.png"  WidthRequest="20"/>
+                    <ImageButton Source="internet.png"  WidthRequest="20"
+                                 Command="{Binding ContactCommand}"
+                                 CommandParameter="https://marcos-jose-dv.github.io/Portfolio/index.html#home"/>
                 </Frame>
             </HorizontalStackLayout>
-
-            <!--<Border Grid.Row="2" WidthRequest="250" StrokeShape="RoundRectangle 20" Stroke="Transparent">
-                <Border.Shadow>
-                    <Shadow Offset="1,1"
-                            Brush="{AppThemeBinding Dark=Black,Light=LightGray}"
-                            Opacity=".6"
-                            Radius="5"/>
-                </Border.Shadow>
-                <Image Source="p02.jpg" Aspect="AspectFill"/>
-            </Border>-->
-
 
             <VerticalStackLayout Grid.Row="3">
                 <Label Margin="10,20,0,0" Text="Projetos"  FontSize="18" FontFamily="NunitoSans-Bold"/>
@@ -104,7 +107,7 @@
                             <Grid>
                                 <Border Margin="10" WidthRequest="150" HeightRequest="150" StrokeShape="RoundRectangle 20" Stroke="Transparent">
                                     <Border.GestureRecognizers>
-                                        <TapGestureRecognizer Command="{Binding BindingContext.GetProjectByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
+                                        <TapGestureRecognizer Command="{Binding BindingContext.GetCourseByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
                                     </Border.GestureRecognizers>
                                     <Border.Shadow>
                                         <Shadow Offset="1,1"

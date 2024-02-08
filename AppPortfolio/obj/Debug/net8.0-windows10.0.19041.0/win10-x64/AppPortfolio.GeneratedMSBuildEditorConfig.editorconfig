@@ -48,17 +48,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.CourseP
 build_metadata.AdditionalFiles.TargetPath = Views\CoursePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CoursePage.xaml
 
+[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/DetailsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.DetailsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\DetailsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\DetailsPage.xaml
+
 [D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
-
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/ProjectDetailsPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.ProjectDetailsPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Views\ProjectDetailsPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Views\ProjectDetailsPage.xaml
 
 [D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/ProjectPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

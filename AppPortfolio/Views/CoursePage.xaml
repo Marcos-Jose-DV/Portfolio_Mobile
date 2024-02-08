@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppPortfolio.Views.CoursePage"
              Shell.NavBarIsVisible="False"
-             Title="CoursePage">
+             Title="CoursePage"
+             x:Name="PaiPage">
     <ContentPage.Resources>
         <Style TargetType="Label" x:Key="H1">
             <Setter Property="FontSize" Value="34"/>
@@ -18,7 +19,7 @@
     <ScrollView>
         <StackLayout HorizontalOptions="Center" Margin="20" Spacing="20">
             <Grid>
-                <Label Text="Projetos" Style="{StaticResource H1}"/>
+                <Label Text="Cursos" Style="{StaticResource H1}"/>
                 <BoxView Margin="0,50,0,0" HeightRequest="3" WidthRequest="70" Color="{StaticResource Primary}"/>
             </Grid>
 
@@ -31,7 +32,7 @@
                         <Grid>
                             <Border Margin="10" WidthRequest="150" HeightRequest="150" StrokeShape="RoundRectangle 20" Stroke="Transparent">
                                 <Border.GestureRecognizers>
-                                    <TapGestureRecognizer Command="{Binding BindingContext.GetProjectByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
+                                    <TapGestureRecognizer Command="{Binding BindingContext.GetCourseByNameCommand, Source={x:Reference PaiPage}}" CommandParameter="{Binding Id}"/>
                                 </Border.GestureRecognizers>
                                 <Border.Shadow>
                                     <Shadow Offset="1,1"

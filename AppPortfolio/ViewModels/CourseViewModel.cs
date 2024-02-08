@@ -27,11 +27,11 @@ public partial class CourseViewModel : Global
         CategoryCourses = _courseRepository.CategoryCourses;
     }
 
-    public ICommand GetProjectByNameCommand =>
-        new Command<int>(GetProjectByName);
+    public ICommand GetCourseByNameCommand =>
+        new Command<int>(GetCourseByName);
 
-    private async void GetProjectByName(int id)
+    private async void GetCourseByName(int id)
     {
-        await Shell.Current.GoToAsync($"ProjectDetailsPage?name={id}");
+        await Shell.Current.GoToAsync($"DetailsPage?Course={id}");
     }
 }

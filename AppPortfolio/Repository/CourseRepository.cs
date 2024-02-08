@@ -14,4 +14,10 @@ public class CourseRepository : ICourseRepository
     }
 
     public IEnumerable<CategoryCourse> CategoryCourses => _context.CategoryCourses.ToList();
+    public IEnumerable<Course> GetCoursesByid(int id)
+    {
+        var course = _context.Courses.Where(course=>course.CategoryId == id).ToList();
+
+        return course;
+    }
 }

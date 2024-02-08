@@ -26,6 +26,6 @@ public partial class ProjectViewModels : Global
 
     private async void GetProjectByName(int id)
     {
-        await Shell.Current.GoToAsync($"ProjectDetailsPage?name={id}");
+        await Shell.Current.GoToAsync($"DetailsPage?Project={id}");
     }
 }

@@ -13,6 +13,18 @@
         <member name="P:AppPortfolio.ViewModels.CourseViewModel.RecentProject">
             <inheritdoc cref="F:AppPortfolio.ViewModels.CourseViewModel._recentProject"/>
         </member>
+        <member name="T:AppPortfolio.ViewModels.DetailsViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.Courses">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._courses"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.Project">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._project"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.Datas">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._datas"/>
+        </member>
         <member name="T:AppPortfolio.ViewModels.HomeViewModel">
             <inheritdoc/>
         </member>
@@ -22,11 +34,8 @@
         <member name="P:AppPortfolio.ViewModels.HomeViewModel.CategoryCourses">
             <inheritdoc cref="F:AppPortfolio.ViewModels.HomeViewModel._categoryCourses"/>
         </member>
-        <member name="T:AppPortfolio.ViewModels.ProjectDetailsViewModel">
-            <inheritdoc/>
-        </member>
-        <member name="P:AppPortfolio.ViewModels.ProjectDetailsViewModel.Projects">
-            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectDetailsViewModel._projects"/>
+        <member name="P:AppPortfolio.ViewModels.HomeViewModel.ThemeTitle">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.HomeViewModel._themeTitle"/>
         </member>
         <member name="T:AppPortfolio.ViewModels.ProjectViewModels">
             <inheritdoc/>
@@ -49,8 +58,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RecentProject">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RecentProject" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Courses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Courses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Project">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Project" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Datas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Datas" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryProjects">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryProjects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ThemeTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ThemeTitle" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Projects">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Projects" generated properties.</summary>
@@ -67,8 +88,20 @@
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RecentProject">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RecentProject" generated properties.</summary>
         </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Courses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Courses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Project">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Project" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Datas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Datas" generated properties.</summary>
+        </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryProjects">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryProjects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ThemeTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ThemeTitle" generated properties.</summary>
         </member>
         <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Projects">
             <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Projects" generated properties.</summary>

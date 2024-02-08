@@ -27,8 +27,8 @@ namespace AppPortfolio
             builder.Services.AddSingleton<ProjectPage>();
             builder.Services.AddSingleton<ProjectViewModels>();
 
-            builder.Services.AddSingleton<ProjectDetailsPage>();
-            builder.Services.AddSingleton<ProjectDetailsViewModel>();
+            builder.Services.AddSingleton<DetailsPage>();
+            builder.Services.AddSingleton<DetailsViewModel>();
 
             builder.Services.AddSingleton<CoursePage>();
             builder.Services.AddSingleton<CourseViewModel>();
@@ -42,7 +42,7 @@ namespace AppPortfolio
             dbContext.Database.EnsureCreated();
             dbContext.Dispose();
 
-            Routing.RegisterRoute(nameof(ProjectDetailsPage), typeof(ProjectDetailsPage));
+            Routing.RegisterRoute(nameof(DetailsPage), typeof(DetailsPage));
 
 #if DEBUG
     		builder.Logging.AddDebug();

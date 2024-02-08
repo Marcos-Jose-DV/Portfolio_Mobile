@@ -77,12 +77,19 @@ public class AppDbContext : DbContext
             );
 
         builder.Entity<Course>().HasData(
-            new Course(1, "C#", "Fundamentos do C#", "12 Hora(S)", "", 1, "C#"),
-            new Course(2, "Razor Pages", "Uma visão geral sobre o ASP.NET Razor Pages", "1 Hora(S)", "", 1, "C#"),
-            new Course(3, "Algoritimo", "Algoritmo e Lógiva de programação 2022 - O curso Completo", "30.5 Hora(S)", "", 6, "Algoritmo"),
-            new Course(4, "Maui", ".NET MAUI - Desenvolvendo um app de Controle Financeiro", "11 Hora(S)", "", 3, ".NET Maui"),
-            new Course(5, "Maui", ".NET MAUI - Desde las bases hasta Profesional | Android | IOS", "117.5 Hora(S)", "", 3, ".NET Maui"),
-            new Course(6, "JavaScript", "Fundamentos do JavaScript", "30 Hora(S)", "", 5, "JavaScript")
+            new Course( 1, "C#", "Fundamentos do C#", "12 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Ffundamentoscsharp02.png?alt=media&token=7ccaa20f-33a4-425e-a7cd-4c9c1ab37eff", 1, "C#" ),
+            new Course(2, "Razor Pages", "Uma visão geral sobre o ASP.NET Razor Pages", "1 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Frazorpages.png?alt=media&token=0e91c791-0b16-431a-b488-01dacc957092", 1, "C#"),
+            new Course(3, "Algoritimo", "Algoritmo e Lógiva de programação 2022 - O curso Completo", "30.5 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Falgoritimo01.png?alt=media&token=2303fdb6-1071-477b-868c-d0bd550d02ec", 6, "Algoritmo"),
+            new Course(4, "Algoritimo", "Lógica de Programação: começandoa desenvolver seus primeiros programas.", "20 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Flogi01.png?alt=media&token=b093fea2-a349-43ec-b59d-a059208d92f0", 6, "Algoritmo"),
+            new Course(5, "Algoritimo", "Lógica de Programação: deixando os seus programas espertos.", "20 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Flogi02.png?alt=media&token=97d50a90-d0a6-4762-9e8d-83e5841cb637", 6, "Algoritmo"),
+            new Course(6, "Algoritimo", "Lógica de Programação: mútiplos valores e módulos.", "20 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Flogi03.png?alt=media&token=0ae235a0-162e-455f-9c88-338d098e60b5", 6, "Algoritmo"),
+            new Course(7, ".NET Maui", ".NET MAUI - Desenvolvendo um app de Controle Financeiro", "11 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fnetmaui01.png?alt=media&token=05ff6f1d-acb6-4f73-a6f5-0615c322418d", 3, ".NET Maui"),
+            new Course(8, ".NET Maui", ".NET MAUI - Desde las bases hasta Profesional | Android | IOS", "117.5 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fnetmaui02.png?alt=media&token=04ac3204-4333-448c-a8b9-bf26212af1cd", 3, ".NET Maui"),
+            new Course(9, "JavaScript", "Fundamentos do JavaScript", "30 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fjs01.png?alt=media&token=f37f12c4-96ee-4845-a9ab-af2055a61a97", 5, "JavaScript"),
+            new Course(10, "JavaScript", "Projeto de Sistemas Web", "30 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fweb01.png?alt=media&token=c4e6a2a5-2f3d-431c-8de4-6a9c2e44fed2", 5, "JavaScript"),
+            new Course(11, "HTML", "HTML: Entrodução ao desenvolvimento de páginas web", "20 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fhtml01.png?alt=media&token=a09ae9e5-59ac-4b0e-9827-c0849a419338", 7, "HTML"),
+            new Course(12, "HTML", "HTML: Tabelas e formulários", "20 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fhtml02.png?alt=media&token=0a8f873b-eb82-498e-a6b0-219fadaebb9e", 7, "HTML"),
+            new Course(13, "CSS", "CSS: folhas de estilo", "30 Hora(S)", "https://firebasestorage.googleapis.com/v0/b/portfoliomobile-c6703.appspot.com/o/Course%2Fcss01.png?alt=media&token=d59258ab-911b-49b2-b37c-1a532becd02c", 8, "CSS")
             );
 
         builder.Entity<CategoryCourse>().HasData(
