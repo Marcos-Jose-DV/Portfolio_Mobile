@@ -35,7 +35,11 @@
                     <FormattedString>
                         <Span Style="{StaticResource H2}" Text="Minha jornada na programação começou em agosto de 2022, quando iniciei meu curso na faculdade de Análise e Desenvolvimento de Sistemas. Comecei com Python, mas enfrentei dificuldades e desisti. Após dois meses, decidi retomar e recomecei da maneira certa, focando em lógica de programação. Fiz o curso"/>
 
-                        <Span Style="{StaticResource H2}" Text=" Algoritmos e Lógica de Programação " TextColor="{StaticResource Primary}" TextDecorations="Underline" />
+                        <Span Style="{StaticResource H2}" Text=" Algoritmos e Lógica de Programação " TextColor="{StaticResource Primary}" TextDecorations="Underline">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer  Command="{Binding ContactCommand}" CommandParameter="https://www.udemy.com/certificate/UC-f1c67792-d256-4dbe-af26-159787e76b8f/"/>
+                            </Span.GestureRecognizers>
+                        </Span>
 
                         <Span Style="{StaticResource H2}" Text="por Nelio Alves na Udemy, o que esclareceu muitos conceitos básicos. No final de 2022, em novembro, consegui um estágio em desenvolvimento em C#. Ao longo de 2023, concentrei-me no universo .NET, aprendendo os fundamentos de maneira sólida. Atualmente, estou focado principalmente no Back-End, mas também tenho interesse no Front-End e Mobile, sendo o .NET MAUI meu framework favorito para desenvolvimento mobile. &#10; &#10;"/>
 

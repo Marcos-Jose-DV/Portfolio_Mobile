@@ -24,6 +24,8 @@ namespace AppPortfolio
             builder.Services.AddSingleton<HomePage>();
             builder.Services.AddSingleton<HomeViewModel>();
 
+            builder.Services.AddSingleton<AboutPage>();
+
             builder.Services.AddSingleton<ProjectPage>();
             builder.Services.AddSingleton<ProjectViewModels>();
 
