@@ -13,7 +13,7 @@ public partial class GameViewModel : Global
 
     private async void LoadGif()
     {
-        await Task.Delay(1000);
+        await Task.Delay(1000); 
         IsAnimationPlayGif = true;
     }
 }
