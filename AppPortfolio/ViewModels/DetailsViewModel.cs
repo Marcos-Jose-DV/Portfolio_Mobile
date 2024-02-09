@@ -80,7 +80,6 @@ namespace AppPortfolio.ViewModels
                 return;
             }
             LoadEmptyViewTitle("projetos");
-            Datas = datas;
         }
 
         private void LoadEmptyViewTitle(string title)

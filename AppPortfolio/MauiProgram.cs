@@ -35,6 +35,9 @@ namespace AppPortfolio
             builder.Services.AddSingleton<CoursePage>();
             builder.Services.AddSingleton<CourseViewModel>();
 
+            builder.Services.AddSingleton<GamePage>();
+            builder.Services.AddSingleton<GameViewModel>();
+
             builder.Services.AddSingleton<IProjectRepository, ProjectRepository>();
             builder.Services.AddSingleton<ICourseRepository, CourseRepository>();
 

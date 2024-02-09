@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AppPortfolio</name>
+    </assembly>
+    <members>
+        <member name="T:AppPortfolio.ViewModels.CourseViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.CourseViewModel.CategoryCourses">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.CourseViewModel._CategoryCourses"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.CourseViewModel.RecentProject">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.CourseViewModel._recentProject"/>
+        </member>
+        <member name="T:AppPortfolio.ViewModels.DetailsViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.Datas">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._datas"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.IsVisiblePopup">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._isVisiblePopup"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.IsEnableImage">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._isEnableImage"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.ImagePopup">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._imagePopup"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.EmptyViewTitle">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.DetailsViewModel._emptyViewTitle"/>
+        </member>
+        <member name="F:AppPortfolio.ViewModels.DetailsViewModel.showPopupCommand">
+            <summary>The backing field for <see cref="P:AppPortfolio.ViewModels.DetailsViewModel.ShowPopupCommand"/>.</summary>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.ShowPopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:AppPortfolio.ViewModels.DetailsViewModel.ShowPopup(System.String)"/>.</summary>
+        </member>
+        <member name="F:AppPortfolio.ViewModels.DetailsViewModel.closePopupCommand">
+            <summary>The backing field for <see cref="P:AppPortfolio.ViewModels.DetailsViewModel.ClosePopupCommand"/>.</summary>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.DetailsViewModel.ClosePopupCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:AppPortfolio.ViewModels.DetailsViewModel.ClosePopup"/>.</summary>
+        </member>
+        <member name="T:AppPortfolio.ViewModels.GameViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.GameViewModel.IsAnimationPlayGif">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.GameViewModel._isAnimationPlayGif"/>
+        </member>
+        <member name="T:AppPortfolio.ViewModels.HomeViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.HomeViewModel.CategoryProjects">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.HomeViewModel._categoryProjects"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.HomeViewModel.CategoryCourses">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.HomeViewModel._categoryCourses"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.HomeViewModel.ThemeTitle">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.HomeViewModel._themeTitle"/>
+        </member>
+        <member name="T:AppPortfolio.ViewModels.ProjectViewModels">
+            <inheritdoc/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.ProjectViewModels.Projects">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectViewModels._projects"/>
+        </member>
+        <member name="P:AppPortfolio.ViewModels.ProjectViewModels.RecentProject">
+            <inheritdoc cref="F:AppPortfolio.ViewModels.ProjectViewModels._recentProject"/>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryCourses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryCourses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.RecentProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "RecentProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Datas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Datas" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsVisiblePopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsVisiblePopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsEnableImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsEnableImage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ImagePopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ImagePopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EmptyViewTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EmptyViewTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsAnimationPlayGif">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsAnimationPlayGif" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.CategoryProjects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "CategoryProjects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.ThemeTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "ThemeTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryCourses">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryCourses" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.RecentProject">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "RecentProject" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Datas">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Datas" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsVisiblePopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsVisiblePopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsEnableImage">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsEnableImage" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ImagePopup">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ImagePopup" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EmptyViewTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EmptyViewTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsAnimationPlayGif">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsAnimationPlayGif" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.CategoryProjects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "CategoryProjects" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.ThemeTitle">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "ThemeTitle" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Projects">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Projects" generated properties.</summary>
+        </member>
+    </members>
+</doc>

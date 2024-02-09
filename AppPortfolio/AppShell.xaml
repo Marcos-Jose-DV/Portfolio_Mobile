@@ -27,6 +27,6 @@
                       ContentTemplate="{DataTemplate views:CoursePage}" />
         <ShellContent Title="Jogos"
                       Icon="game_icon.png"
-                      ContentTemplate="{DataTemplate views:HomePage}" />
+                      ContentTemplate="{DataTemplate views:GamePage}" />
     </TabBar>
 </Shell>
