@@ -5,7 +5,7 @@
 </p>
 
 <h1>Resumo do projeto</h1>
-<p>O aplicativo é um projeto de portfólio pessoal desenvolvido com o framework .NET MAUI (Multi-platform App UI) da Microsoft. O .NET MAUI permite criar aplicativos multiplataforma para dispositivos móveis, desktop e web usando uma única base de código em C#. Este aplicativo serve como uma vitrine para mostrar resumidamente quem sou, meus cursos, certificados, habilidades e projetos desenvolvidos.
+<p>O aplicativo é um projeto de portfólio pessoal desenvolvido com o framework .NET MAUI (Multi-platform App UI) da Microsoft. O .NET MAUI permite criar aplicativos multiplataforma para dispositivos móveis, desktop e web usando uma única base de código em C#. Este aplicativo serve como uma vitrine para mostrar resumidamente quem sou, meus cursos, certificados, habilidades e projetos desenvolvidos.</p>
 <h2>🛠️: Funcionalidades do projeto</h2> 
 Resumo Pessoal: Apresenta um resumo sobre mim, destacando minha experiência, habilidades e áreas de interesse.
 Cursos e Certificados: Exibe uma lista dos cursos que completei e os certificados obtidos, fornecendo detalhes sobre as habilidades adquiridas em cada um.
