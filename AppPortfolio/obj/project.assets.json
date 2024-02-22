@@ -40963,11 +40963,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
+      "projectUniqueName": "D:\\01 - Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
       "projectName": "AppPortfolio",
-      "projectPath": "D:\\Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
+      "projectPath": "D:\\01 - Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
       "packagesPath": "C:\\Users\\marco\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\obj\\",
+      "outputPath": "D:\\01 - Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

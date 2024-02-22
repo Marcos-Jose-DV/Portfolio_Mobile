@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/XVWO0ibIbwv//6TNBldAcSE8YWeZ1S5vrO7cS8Vv8WA13TvLVz4krD/EGh67S1IgAV8tpkU+HDbBa6Wsk3mlA==",
+  "dgSpecHash": "oFDPqbJ2CNwxzkQSqs2kBGNGJjxpCCLsIZu5iBxQOl9VMA9cYVJq4aZedm19WWQOyposdBtIdpDAONVPdSSjLQ==",
   "success": true,
-  "projectFilePath": "D:\\Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
+  "projectFilePath": "D:\\01 - Projetos GitHub\\C#\\Mobile\\PortfolioMobile\\AppPortfolio\\AppPortfolio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marco\\.nuget\\packages\\communitytoolkit.mvvm\\8.2.2\\communitytoolkit.mvvm.8.2.2.nupkg.sha512",
     "C:\\Users\\marco\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",

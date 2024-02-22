@@ -8,65 +8,65 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppPortfolio
-build_property.ProjectDir = D:\Projetos GitHub\C#\Mobile\PortfolioMobile\AppPortfolio\
+build_property.ProjectDir = D:\01 - Projetos GitHub\C#\Mobile\PortfolioMobile\AppPortfolio\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/App.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/AppShell.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Resources/Styles/Colors.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Resources/Styles/Styles.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/AboutPage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/AboutPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.AboutPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\AboutPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\AboutPage.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/CoursePage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/CoursePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.CoursePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\CoursePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\CoursePage.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/DetailsPage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/DetailsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.DetailsPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\DetailsPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\DetailsPage.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/GamePage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/GamePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.GamePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\GamePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\GamePage.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/HomePage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/HomePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.HomePage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\HomePage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\HomePage.xaml
 
-[D:/Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/ProjectPage.xaml]
+[D:/01 - Projetos GitHub/C\#/Mobile/PortfolioMobile/AppPortfolio/Views/ProjectPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = AppPortfolio.Views.ProjectPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\ProjectPage.xaml
